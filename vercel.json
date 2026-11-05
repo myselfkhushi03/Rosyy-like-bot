@@ -1,20 +1,20 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "index.py",
-            "use": "@vercel/python"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "index.py"
-        }
-    ],
-    "functions": {
-        "index.py": {
-            "includeFiles": "token_*.json"
-        }
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.py",
+      "use": "@vercel/python"
     }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.py"
+    }
+  ],
+  "functions": {
+    "index.py": {
+      "includeFiles": "token_*.json"
+    }
+  }
 }
